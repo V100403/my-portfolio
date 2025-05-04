@@ -1,96 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vanishta Narainsamy - Web Developer Portfolio">
-    <meta name="author" content="Vanishta Narainsamy">
-    <title>Vanishta Narainsamy - Web Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanishta Narainsamy | Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header, section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    header {
+      background-color: #004080;
+      color: #fff;
+      text-align: center;
+    }
+    h1, h2 {
+      color: #004080;
+    }
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+    .section {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 30px;
+    }
+    .section:last-child {
+      border: none;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: #0077cc;
+    }
+  </style>
 </head>
-
 <body>
-    <!-- Navigation -->
+
+  <header>
+    <h1>Vanishta Narainsamy</h1>
+    <p>Web & Multimedia Development Student | University of Mauritius</p>
     <nav>
-        <div class="logo">
-            <h1>Vanishta Narainsamy</h1>
-            <p>Web & Multimedia Developer</p>
-        </div>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#design">Design Work</a>
+      <a href="#development">Web Projects</a>
+      <a href="#internship">Internship</a>
+      <a href="#reflection">Reflection</a>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <header id="hero">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Showcasing my skills and projects as a web developer</p>
-    </header>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hi, I’m Vanishta Narainsamy, a Web and Multimedia Development student at the University of Mauritius. I enjoy building interactive web projects using HTML, CSS, JavaScript, jQuery, PHP, and MySQL, and designing visuals with Canva, Photoshop, Illustrator, and Figma.</p>
+    <p>I’ve created academic websites, tutorials, logos, posters, and mockups, and I’ve actively contributed to student clubs—growing from a Graphics Lead and Multimedia Coordinator to leadership roles like Secretary and Vice-President. My journey reflects my passion for tech, creativity, and meaningful collaboration.</p>
+  </section>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Vanishta Narainsamy, a passionate web and multimedia developer. I have experience in various
-            fields like web development, multimedia design, and content creation. I strive to combine creativity with
-            technical skills to create functional and visually appealing websites and applications.</p>
-    </section>
+  <section id="skills" class="section">
+    <h2>Creative Tools & Technical Skills</h2>
+    <ul>
+      <li><strong>Design Tools:</strong> Figma, Adobe Illustrator, Photoshop, Canva</li>
+      <li><strong>Development:</strong> HTML, CSS, JavaScript, jQuery, PHP, MySQL</li>
+    </ul>
+    <p>These tools empower me to merge design with functionality, creating visually appealing and interactive solutions.</p>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Web Development Frameworks: React, Node.js</li>
-            <li>Mobile Development: Flutter</li>
-            <li>Design Tools: Adobe Illustrator, Adobe Animate, Figma</li>
-            <li>Backend Development: PHP, MySQL, SQL Server</li>
-            <li>Content Management: WordPress</li>
-        </ul>
-    </section>
+  <section id="design" class="section">
+    <h2>My Works (Design)</h2>
+    <ul>
+      <li>Festival Posters & Postcards with QR code for role registration</li>
+      <li>Role marketing poster for student clubs</li>
+      <li>Moodboard and website mockups created using Canva, Figma, and Adobe Illustrator</li>
+      <li>Simple animations created using Adobe Animate</li>
+      <li>Photoshop-edited visuals for final year project</li>
+      <li>Photography: spontaneous captures showcasing composition and lighting</li>
+    </ul>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Project 1: School Enrollment and Grading System</h3>
-            <p>A Windows Forms Application built in C# (.NET Framework) to manage student enrollments and grading.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Project 2: Web Development Portfolio</h3>
-            <p>This portfolio website demonstrates my skills in HTML, CSS, JavaScript, and web development best practices.</p>
-            <a href="#">View Project</a>
-        </div>
-    </section>
+  <section id="development" class="section">
+    <h2>My Works (Web Development)</h2>
+    <p>Includes academic websites, form-based projects, and collaborative platforms using core web technologies such as HTML, CSS, JS, PHP, and MySQL.</p>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to work with me or get in touch, feel free to drop me a message!</p>
-        <form>
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+  <section id="internship" class="section">
+    <h2>Internship Experience</h2>
+    <p>I interned at the Centre for Innovative and Lifelong Learning (CILL) where I explored educational technologies like Wooclap and Canva.</p>
+    <p>I designed tutorials with AI voiceovers and soft background music to help lecturers integrate tools into their teaching. These included:</p>
+    <ul>
+      <li>How to use Wooclap and create polls</li>
+      <li>Integrating Wooclap into presentations</li>
+    </ul>
+    <p>I also created visually rich diagrams for blended learning and reflective models like Gibbs and John's. View my materials here:</p>
+    <ul>
+      <li><a href="https://drive.google.com/drive/folders/14pDlLBkVjZE9zRKhwNl4RX8uKAaAFwYl?usp=sharing" target="_blank">Main Drive (Tutorials & Visuals)</a></li>
+      <li><a href="https://drive.google.com/drive/folders/1E6k6Sxaql1yppShz85cmlxwbmMxVT6s-" target="_blank">Reflective Models</a></li>
+    </ul>
+    <p>I also completed the course <em>Understanding Open Educational Resources (OER)</em> by the Commonwealth of Learning, which deepened my awareness of open access in education.</p>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Vanishta Narainsamy</p>
-    </footer>
+  <section id="reflection" class="section">
+    <h2>A Journey of Growth</h2>
+    <p>From a shy student to a confident team leader, I’ve grown immensely through hands-on university projects, club involvement, and my internship. These experiences sharpened my communication, time management, and adaptability.</p>
+    <p>I’ve learned to collaborate, lead, and solve problems with creativity. As I move into the professional world, I remain committed to lifelong learning and am excited to tackle new challenges in web and multimedia development.</p>
+  </section>
 
-    <script src="scripts.js"></script>
 </body>
-
 </html>
