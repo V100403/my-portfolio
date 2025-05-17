@@ -1,101 +1,82 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth" >
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vanishta Narainsamy | Portfolio</title>
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Enable Tailwind dark mode via class -->
-  <script>
-    tailwind.config = {
-      darkMode: 'class'
-    }
-  </script>
-
-  <!-- Swiper.js CSS for carousel -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-  />
-
+  <link rel="stylesheet" href="style.css" />
   <style>
-    /* Custom scrollbar for carousel */
-    .swiper-scrollbar {
-      background: #e5e7eb;
+    /* Basic styling for Leadership section */
+    #leadership {
+      background-color: #f9f9f9;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-    .swiper-scrollbar-drag {
-      background: #3b82f6;
+    #leadership h2 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    #leadership ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    #leadership li {
+      margin-bottom: 1rem;
+      line-height: 1.5;
+      color: #555;
     }
   </style>
 </head>
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500">
-
-  <section class="bg-gradient-to-r from-blue-100 to-gray-50 dark:from-gray-800 dark:to-gray-900 py-24 text-center border-b border-gray-200 dark:border-gray-700">
-    <div class="max-w-xl mx-auto px-4">
-      <h1 class="text-5xl font-bold mb-4 text-blue-900 dark:text-blue-400">Hello, I'm Vanishta</h1>
-      <p class="text-lg text-gray-700 dark:text-gray-300 mb-8">
-        Aspiring Web & Multimedia Developer | Creative Thinker | Lifelong Learner | Future UI/UX Designer
-      </p>
-      <a href="#about" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-md font-semibold hover:bg-blue-700 transition">
-        Explore My Work
-      </a>
+<body>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm Vanishta</h1>
+      <p>Aspiring Web & Multimedia Developer | Creative Thinker | Lifelong Learner | Future UI/UX Designer</p>
+      <a href="#about" class="btn">Explore My Work</a>
     </div>
   </section>
 
-  <header class="text-center py-8 border-b border-gray-200 dark:border-gray-700">
-    <h1 class="text-4xl font-extrabold mb-1 text-blue-900 dark:text-blue-400">Vanishta Narainsamy</h1>
-    <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Web & Multimedia Developer</p>
+  <header>
+    <h1>Vanishta Narainsamy</h1>
+    <p>Web & Multimedia Developer</p>
     <nav>
-      <ul class="flex justify-center space-x-6 items-center text-blue-600 dark:text-blue-400 font-semibold">
-        <button id="themeToggle" aria-label="Toggle Dark Mode" class="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition">🌙 Toggle Theme</button>
-        <li><a href="#about" class="hover:underline">About Me</a></li>
-        <li><a href="#skills" class="hover:underline">Skills</a></li>
-        <li><a href="#work" class="hover:underline">Work</a></li>
-        <li><a href="#leadership" class="hover:underline">Leadership</a></li>
-        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      <ul>
+        <li><button id="themeToggle" class="btn toggle-btn">🌙 Toggle Theme</button></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="max-w-5xl mx-auto px-4 py-12 space-y-16">
-
-    <!-- About Section -->
-    <section id="about" class="flex flex-col md:flex-row items-center gap-10 bg-white dark:bg-gray-800 rounded-xl p-10 shadow-md transition-colors duration-500">
-      <img 
-        src="https://raw.githubusercontent.com/V100403/my-portfolio/main/My photo.jpg" 
-        alt="Vanishta Narainsamy" 
-        class="w-64 h-64 object-cover rounded-lg shadow-lg"
-      />
-      <div class="flex-1 space-y-4 text-gray-800 dark:text-gray-200">
-        <h2 class="text-3xl font-semibold text-blue-900 dark:text-blue-400">About Me</h2>
-        <p>
-          I'm a Web and Multimedia Development student at the University of Mauritius. When I first joined, I was shy and introverted, but I was determined to step out of my comfort zone and become more social and involved on campus.
-        </p>
-        <p>
-          I began my campus involvement by joining the Google Developer Student Clubs (GDSC) as Graphics Lead, where I developed promotional materials and contributed to event communications.
-        </p>
-        <p>
-          Shortly after, I joined Rays Club, progressing through the roles of Multimedia Coordinator, Head of Multimedia Coordinators, Secretary, and currently Vice President. In these roles, I led the multimedia team for major events such as the Mr and Miss UoM pageant, organizing and delegating tasks while mentoring teammates.
-        </p>
-        <p>
-          Later, I became involved with the Multimedia Society, serving as Secretary from Year 1 through Year 2, managing communications, meetings, and club activities.
-        </p>
-        <p>
-          I also completed my placement at the Centre for Innovative and Lifelong Learning (CILL), where I developed AI-narrated interactive video tutorials for educational tools, gaining valuable practical experience in multimedia development.
-        </p>
-        <p>
-          Through these experiences, I have grown my leadership, communication, and organizational skills, while nurturing my passion for design. I aspire to become a UI/UX Designer, creating meaningful and engaging digital experiences centered around users.
-        </p>
+  <main>
+    <section id="about">
+      <div class="about-container">
+        <img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/My%20photo.jpg" alt="My Photo" />
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>I'm a Web and Multimedia Development student at the University of Mauritius. When I first joined, I was shy and introverted, but I was determined to step out of my comfort zone and become more social and involved on campus.</p>
+          <br />
+          <p>I began my campus involvement by joining the Google Developer Student Clubs (GDSC) as Graphics Lead, where I developed promotional materials and contributed to event communications.</p>
+          <br />
+          <p>Shortly after, I joined Rays Club, progressing through the roles of Multimedia Coordinator, Head of Multimedia Coordinators, Secretary, and currently Vice President. In these roles, I led the multimedia team for major events such as the Mr and Miss UoM pageant, organizing and delegating tasks while mentoring teammates.</p>
+          <br />
+          <p>Later, I became involved with the Multimedia Society, serving as Secretary from Year 1 through Year 2, managing communications, meetings, and club activities.</p>
+          <br />
+          <p>I also completed my placement at the Centre for Innovative and Lifelong Learning (CILL), where I developed AI-narrated interactive video tutorials for educational tools, gaining valuable practical experience in multimedia development.</p>
+          <br />
+          <p>Through these experiences, I have grown my leadership, communication, and organizational skills, while nurturing my passion for design. I aspire to become a UI/UX Designer, creating meaningful and engaging digital experiences centered around users.</p>
+        </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-md transition-colors duration-500">
-      <h2 class="text-3xl font-semibold text-blue-900 dark:text-blue-400 mb-6">Skills</h2>
-      <ul class="list-disc list-inside space-y-3 text-gray-700 dark:text-gray-300 text-lg">
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
         <li>HTML, CSS, JavaScript</li>
         <li>PHP, MySQL</li>
         <li>Figma, Canva, Adobe Illustrator, Photoshop</li>
@@ -103,52 +84,96 @@
       </ul>
     </section>
 
-    <!-- Work Section -->
-    <section id="work" class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-md transition-colors duration-500">
-      <h2 class="text-3xl font-semibold text-blue-900 dark:text-blue-400 mb-6">Selected Work</h2>
-
-      <!-- Posters Carousel -->
+    <section id="work">
+      <h2>Selected Work</h2>
       <article>
-        <h3 class="text-2xl font-semibold mb-4 text-blue-700 dark:text-blue-300">Festival Posters & Postcards</h3>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/Christmas Poster 1.png" alt="Poster 1" class="rounded-lg shadow-lg w-full object-cover" /></div>
-            <div class="swiper-slide"><img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/Christmas Poster 2.png" alt="Poster 2" class="rounded-lg shadow-lg w-full object-cover" /></div>
-            <div class="swiper-slide"><img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/Christmas Poster 3.png" alt="Poster 3" class="rounded-lg shadow-lg w-full object-cover" /></div>
-            <div class="swiper-slide"><img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/Christmas Poster 4.png" alt="Poster 4" class="rounded-lg shadow-lg w-full object-cover" /></div>
-            <div class="swiper-slide"><img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/Christmas Poster 5.png" alt="Poster 5" class="rounded-lg shadow-lg w-full object-cover" /></div>
-            <div class="swiper-slide"><img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/New Year 1.png" alt="Poster 6" class="rounded-lg shadow-lg w-full object-cover" /></div>
-            <div class="swiper-slide"><img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/New Year 2.png" alt="Poster 7" class="rounded-lg shadow-lg w-full object-cover" /></div>
-            <div class="swiper-slide"><img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/New Year 3.png" alt="Poster 8" class="rounded-lg shadow-lg w-full object-cover" /></div>
-            <div class="swiper-slide"><img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/New Year 4.png" alt="Poster 9" class="rounded-lg shadow-lg w-full object-cover" /></div>
-            <div class="swiper-slide"><img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/template3.png" alt="Poster 10" class="rounded-lg shadow-lg w-full object-cover" /></div>
+        <h3>Festival Posters & Postcards</h3>
+        <section class="posters">
+          <h2>My Posters</h2>
+          <div class="poster-grid">
+            <img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/Christmas%20Poster%201.png" alt="Poster 1" />
+            <img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/Christmas%20Poster%202.png" alt="Poster 2" />
+            <img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/Christmas%20Poster%203.png" alt="Poster 3" />
+            <img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/Christmas%20Poster%204.png" alt="Poster 4" />
+            <img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/Christmas%20Poster%205.png" alt="Poster 5" />
+            <img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/New%20Year%201.png" alt="Poster 6" />
+            <img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/New%20Year%202.png" alt="Poster 7" />
+            <img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/New%20Year%203.png" alt="Poster 8" />
+            <img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/New%20Year%204.png" alt="Poster 9" />
+            <img src="https://raw.githubusercontent.com/V100403/my-portfolio/main/template3.png" alt="Poster 10" />
           </div>
-          <!-- Pagination -->
-          <div class="swiper-pagination mt-4"></div>
-        </div>
+        </section>
       </article>
-
-      <!-- Other Work -->
-      <article class="mt-10">
-        <h3 class="text-2xl font-semibold mb-2 text-blue-700 dark:text-blue-300">Website Mockups</h3>
+      <article>
+        <h3>Website Mockups</h3>
         <p>Created moodboards and mockups using Figma and Canva for various projects.</p>
       </article>
-
-      <article class="mt-8">
-        <h3 class="text-2xl font-semibold mb-2 text-blue-700 dark:text-blue-300">Interactive Tutorials</h3>
+      <article>
+        <h3>Interactive Tutorials</h3>
         <p>Developed AI-narrated video tutorials for educational tools during my placement at CILL.</p>
       </article>
     </section>
 
-    <!-- Leadership Section -->
-    <section id="leadership" class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-md transition-colors duration-500">
-      <h2 class="text-3xl font-semibold text-blue-900 dark:text-blue-400 mb-6">Leadership & Involvement</h2>
-      <ul class="list-disc list-inside space-y-4 text-gray-700 dark:text-gray-300 text-lg">
-        <li>
-          <strong>Google Developer Student Clubs (GDSC):</strong>  
-          Graphics Lead – Designed graphics and promotional materials to support club initiatives and events.
-        </li>
-        <li>
-          <strong>Rays Club (University of Mauritius):</strong>  
-          Multimedia Coordinator, Head of Multimedia
+    <section id="leadership">
+      <h2>Leadership & Involvement</h2>
+      <ul>
+        <li><strong>Google Developer Student Clubs (GDSC):</strong> Graphics Lead – Designed graphics and promotional materials to support club initiatives and events.</li>
+        <li><strong>Rays Club (University of Mauritius):</strong> Multimedia Coordinator, Head of Multimedia Coordinators, Secretary, Vice President (Current) – Led multimedia efforts for major events; organized and delegated team tasks; mentored team members; helped lead club initiatives.</li>
+        <li><strong>Multimedia Society:</strong> Secretary (Year 1 – Year 2) – Managed club communications, meetings, and activities.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:narainsamyvan@gmail.com">narainsamyvan@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/vanishta" target="_blank">github.com/vanishta</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vanishta Narainsamy</p>
+  </footer>
+
+  <script>
+    // Dark mode toggle with persistence
+    const toggle = document.getElementById('themeToggle');
+
+    function setTheme(isDark) {
+      if (isDark) {
+        document.body.classList.add('dark-mode');
+        toggle.textContent = '☀️ Light Mode';
+      } else {
+        document.body.classList.remove('dark-mode');
+        toggle.textContent = '🌙 Dark Mode';
+      }
+      localStorage.setItem('darkMode', isDark);
+    }
+
+    // Load saved theme on page load
+    const savedTheme = localStorage.getItem('darkMode');
+    if (savedTheme === 'true') {
+      setTheme(true);
+    } else {
+      setTheme(false);
+    }
+
+    toggle.addEventListener('click', () => {
+      const isDark = !document.body.classList.contains('dark-mode');
+      setTheme(isDark);
+    });
+
+    // Fade-in animation on page load
+    const fadeElements = document.querySelectorAll('section, .about-container, footer');
+    fadeElements.forEach(el => el.classList.add('fade-in'));
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetID = link.getAttribute('href').slice(1);
+        document.getElementById(targetID).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
