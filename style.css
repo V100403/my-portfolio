@@ -130,4 +130,130 @@ nav ul li a:hover {
 .posters {
   max-width: 1000px;
   margin: 60px auto;
-  padding: 40px 20px
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
+}
+
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.poster-grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.poster-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Sections Titles */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+/* Skills & Leadership */
+#skills ul, #leadership ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  max-width: 700px;
+  margin: auto;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  margin: 80px 0 40px 0;
+}
+
+#contact a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-mode header h1,
+body.dark-mode h2,
+body.dark-mode header p,
+body.dark-mode nav ul li a,
+body.dark-mode #leadership ul li,
+body.dark-mode #skills ul li {
+  color: #ddd;
+}
+
+body.dark-mode nav ul li a:hover {
+  color: #f39c12;
+}
+
+body.dark-mode .hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #eee;
+}
+
+body.dark-mode .btn {
+  background-color: #f39c12;
+  color: #222;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #d78c07;
+}
+
+/* Fade in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards ease-in;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .about-container img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
