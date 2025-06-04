@@ -196,18 +196,25 @@ footer {
 }
 
 /* Dark Mode */
+/* Dark Mode */
 body.dark-mode {
   background-color: #121212;
-  color: #eee;
+  color: #ffffff;
 }
 
 body.dark-mode header h1,
 body.dark-mode h2,
 body.dark-mode header p,
 body.dark-mode nav ul li a,
+body.dark-mode .hero h1,
+body.dark-mode .hero p,
+body.dark-mode .about-text h2,
+body.dark-mode .about-text p,
+body.dark-mode #skills ul li,
 body.dark-mode #leadership ul li,
-body.dark-mode #skills ul li {
-  color: #ddd;
+body.dark-mode #contact a,
+body.dark-mode footer {
+  color: #ffffff;
 }
 
 body.dark-mode nav ul li a:hover {
@@ -216,16 +223,22 @@ body.dark-mode nav ul li a:hover {
 
 body.dark-mode .hero {
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: #eee;
 }
 
 body.dark-mode .btn {
   background-color: #f39c12;
-  color: #222;
+  color: #121212;
 }
 
 body.dark-mode .btn:hover {
   background-color: #d78c07;
+}
+
+body.dark-mode .about-container,
+body.dark-mode .posters {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
 }
 
 /* Fade in animation */
